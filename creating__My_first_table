@@ -1,0 +1,16 @@
+create database sumit;
+use sumit;
+
+create table student(
+id int primary key,
+name varchar(50),
+age int 
+);
+
+insert into student
+values
+(101,"sumit",19),
+(102,"raghav",20),
+(103,"formula",21);
+
+select * from student;
