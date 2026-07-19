@@ -1,0 +1,24 @@
+create database instagram;
+use instagram;
+create database  if not exists instagram;
+drop database instagram;
+drop database if exists instagram;
+show databases;
+show tables;
+
+create table user(
+id int primary key,
+name varchar(50) not null,
+Email varchar(100) unique,
+age int check (age>=13),
+followers int,
+following int
+);
+insert into user 
+values
+(101,"Adam","adambhai@email.com",19,101,156),
+(102,"bob","bobbole@bilibili.com",13,143,128),
+(103,"casey","casheybhai@local.123",14,78,12),
+(104,"Donald","donaldlakshami@sampli.com",23,101,139);
+
+select *from user;
