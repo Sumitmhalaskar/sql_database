@@ -1,0 +1,7 @@
+create database instagram;
+use instagram;
+create database  if not exists instagram;
+drop database instagram;
+drop database if exists instagram;
+show databases;
+show tables;
