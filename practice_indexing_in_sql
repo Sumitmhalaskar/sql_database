@@ -1,0 +1,26 @@
+
+create table account(
+account_id int primary key,
+name varchar(100),
+balance decimal(10,2),
+branch varchar(100)
+);
+
+
+insert into account 
+values
+(1,"Adam",500.00,"mumbai"),
+(2,"bob",300.00,"delhi"),
+(3,"charlie",700.00,"banglore"),
+(4,"devid",1000.00,"NOida");
+
+
+create index idx_branch on account(branch);
+
+select * from account where branch = "mumbai";
+
+create view view1 as
+select account_id,name from account;
+
+select * from view1;
+ 
